@@ -37,7 +37,34 @@ def feladat_5():
         if(szam2==0 or szam2<=0):
             szam2 = float(input("Hiba: a másik oldal negatív, próbáld újra:  "))
     if(szam1>0 and szam2>0):
-        print("minden oké")
+        szamosszeg=szam1+szam2
+        terulet=szam1*szam2
+        kerulet=2*szamosszeg
+        print(f"a téglalap területe: {terulet:.2f}")
+        print(f"a téglalap kerülete: {kerulet:.2f}")
+
+def feladat_6():
+    lista=["A","B","C","D","E","F","G","H"]
+    szektor = input("Add meg a szektor nagy betűjelét Atól H-ig, és megmutatom, mi található ott: ").upper()
+    while szektor not in lista:
+          szektor = input("Hiba: ilyen szektor nincs, próbáld újra: ").upper()
+    if szektor == "A":
+        print("Nemzetközi Csarnok, World Conservation Forum 2021")
+    elif szektor == "B" or szektor == "E":
+        print("Kereskedelmi Csarnok")
+    elif szektor == "C":
+        print("Konferencia-központ Innovációs Showroom")
+    elif szektor == "D":
+        print("Hal, Víz és Ember")
+    elif szektor == "F":
+        print("Hagyományos Vadászati Módok Csarnoka")
+    elif szektor == "G":
+        print("Hazai és nemzetközi Trófeakiállítás, 12. Nyílt Európai Taxiderma-bajnokság, Vadászat 21. században kiállítás")
+    elif szektor == "H":
+        print("Központi Magyar Kiállítás")
+    
+
+
 
     
 
